@@ -29,25 +29,6 @@ fetch('https://dummyjson.com/recipes')
   console.log("error: ", error);
   });
 
-function verDetalle(id) {
-  fetch(`https://dummyjson.com/recipes/${id}`)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        let detalle = document.getElementById("detalleReceta");
-        detalle.style.display = "block";  
-        detalle.innerHTML = `
-            <h2>${data.name}</h2>
-            <img src="${data.image}" alt="${data.name}" style="width: 100%; max-width: 300px;">
-            <p>Dificultad: ${data.difficulty}</p>
-            <p>Descripción: ${data.instructions}</p>
-        `;
-    })
-    .catch(function (error) {
-        console.log("Error al obtener los detalles de la receta:", error);
-    });
-}
 
 
 
