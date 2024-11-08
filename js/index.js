@@ -27,7 +27,7 @@ fetch('https://dummyjson.com/recipes')
     console.log("Error al obtener recetas:", error);
   });
 
-// Función para ver detalles de una receta específica
+
 function verDetalle(id) {
   fetch(`https://dummyjson.com/recipes/${id}`)
     .then(function (response) {
@@ -35,7 +35,7 @@ function verDetalle(id) {
     })
     .then(function (data) {
       let detalle = document.getElementById("detalleReceta");
-      detalle.style.display = "block";  // Mostrar el contenedor de detalles
+      detalle.style.display = "block";  
       detalle.innerHTML = `
             <h2>${data.name}</h2>
             <img src="${data.image}" alt="${data.name}" style="width: 100%; max-width: 300px;">
