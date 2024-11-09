@@ -29,28 +29,32 @@ li{
 }
 .logo-img{
     border-radius: 25%;
+    border: #000000 solid 2px;
     width: 80px;
-    margin: 10px;
+    margin: 10px 0px 10px 20px;
 }
 
 .indice-general{
     display: flex;
     justify-content: space-between;
     background-color: #444;
+    background-color: rgb(238, 166, 71);
     width: 100vw;   
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .indice-vinculos{
+    font-size: 20px;
     display: flex;
     border:solid rgba(255, 255, 255, 0.2) 2px;
-    border:solid #ff8325 2px;
+    border:solid #000000 3px;
+    background-color: rgb(250, 132, 47);
     border-radius: 7px;
     height: 40px;
     width: 10vw;
-    margin: 25px 10px;
+    margin: 35px 20px;
     align-items: center;
     justify-content: center;
-    color: #ff8325;
+    color: #000000;
 }
 
 .recipe-list{

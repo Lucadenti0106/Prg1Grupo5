@@ -14,9 +14,9 @@ fetch('https://dummyjson.com/recipes')
         <article class="recetas-info">
           <h2>${recetas[i].name}</h2>
           <p>${recetas[i].difficulty}</p>
-          <article class="detalle-recetas-boton">
-            <a href="recetas.html?id=${recetas[i].id}">Ver más</a>
-          </article>
+        </article>
+        <article class="detalle-recetas-boton">
+          <a href="recetas.html?id=${recetas[i].id}">Ver más</a>
         </article>
       </article>
         `;
