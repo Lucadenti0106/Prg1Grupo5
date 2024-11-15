@@ -37,8 +37,9 @@ li{
 .indice-general{
     display: flex;
     justify-content: space-between;
+    align-content: center;
     background-color: #444;
-    background-color: rgb(238, 166, 71);
+    background-color: rgb(46, 46, 46);
     width: 100vw;   
     margin-bottom: 15px;
 }
@@ -55,6 +56,21 @@ li{
     align-items: center;
     justify-content: center;
     color: #000000;
+}
+.search-form{
+    display: flex;
+    align-self: center;
+}
+.buscador{
+    border:solid #000000 3px;
+    border-radius: 7px;
+    width: 15vw;
+    height: 40px;
+}
+button{
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
 }
 
 .recipe-list{
