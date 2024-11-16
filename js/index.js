@@ -1,6 +1,6 @@
-let recetasMostradas = 0; // Contador de recetas ya mostradas
+let recetasMostradas = 0; 
 
-// Función para cargar recetas y agregar al HTML
+
 function cargarRecetas() {
   fetch('https://dummyjson.com/recipes')
     .then(function(response) {
@@ -11,7 +11,7 @@ function cargarRecetas() {
       let cocina = "";
       let characterList = document.querySelector(".recipe-list");
 
-      // Cargar 10 recetas adicionales a partir de recetasMostradas
+      
       for (let i = recetasMostradas; i < recetasMostradas + 10 && i < recetas.length; i++) {
         cocina += `
           <article class="article-recetas">
@@ -27,10 +27,10 @@ function cargarRecetas() {
         `;
       }
 
-      // Incrementar el contador de recetas ya mostradas
+      
       recetasMostradas += 10;
 
-      // Agregar las recetas al contenedor
+      
       characterList.innerHTML += cocina;
     })
     .catch(function(error) {
@@ -38,10 +38,10 @@ function cargarRecetas() {
     });
 }
 
-// Evento de clic en el botón para cargar más recetas
+
 document.querySelector("#loadMoreButton").addEventListener("click", cargarRecetas);
 
-// Cargar las primeras 10 recetas al inicio
+
 cargarRecetas();
 
 
