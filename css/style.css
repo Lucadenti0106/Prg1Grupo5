@@ -57,6 +57,10 @@ li{
     justify-content: center;
     color: #000000;
 }
+.indice-vinculos:hover{
+    border:solid #000000 4px;
+    font-weight:520;
+}
 .search-form{
     display: flex;
     align-self: center;
@@ -67,7 +71,7 @@ li{
     width: 15vw;
     height: 40px;
 }
-button{
+li button{
     border-radius: 20px;
     height: 40px;
     width: 40px;
@@ -87,7 +91,7 @@ button{
     width: 40%;
     
 }
-.article-recetas {
+.article-recetas{
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -121,16 +125,24 @@ button{
     margin: 10px;
     align-self: flex-end;
     justify-self: flex-end;
+}.detalle-recetas-boton:hover{
+    border:solid #000000 4px;
+    font-weight:520;
 }
 .article-recetas:hover {
     filter: drop-shadow(3px 3px 6px rgb(88, 88, 88));
     transition-duration: .3s;
 }
 footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 12vh;
     background-color: #444;
     color: #ff6f00; 
-    padding: 20px 0;
-    text-align: center;
+    padding: 5px ;
+    border-radius:  20px 20px 0 0;
 }
 
 .social-icons {
@@ -146,4 +158,30 @@ footer {
 }
 .social-icons a:hover {
     color: #fff;
+}
+.load-more-button{
+    font-size: 20px;
+    display: flex;
+    border:solid #000000 3px;
+    background-color: rgb(250, 132, 47);
+    border-radius: 7px;
+    height: 50px;
+    width: 10vw;
+    margin: 35px 20px;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+.load-more-button:hover{
+    border: solid 5px black;
+    border-radius: 10px;
+    height: 50px;
+    width: 11vw;
+}
+.search-results{
+    display: flex;
+    justify-content:space-evenly;
+    align-content: center;
+    width: 100vw;   
+    margin-bottom: 15px;
 }

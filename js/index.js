@@ -39,7 +39,7 @@ function cargarRecetas() {
 }
 
 
-document.querySelector("#loadMoreButton").addEventListener("click", cargarRecetas);
+document.querySelector(".load-more-button").addEventListener("click", cargarRecetas);
 
 
 cargarRecetas();
