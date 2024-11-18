@@ -21,7 +21,7 @@ function cargarRecetas() {
               <p>${recetas[i].difficulty}</p>
               </article>
             <article class="detalle-recetas-boton">
-              <a href="*">Ver mas</a>
+              <a href="./recetas.html?id=${recetas[i].id}">Ver mas</a>
             </article>
           </article>
         `;

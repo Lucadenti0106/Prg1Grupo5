@@ -1,13 +1,15 @@
 let querySelector = location.search;
 let querySelectorObj = new URLSearchParams(querySelector);
 let recetaId = querySelectorObj.get('id');
+console.log(recetaId)
 
     if (recetaId) {
-        fetch('https://dummyjson.com/recipes/' + recetaId)
+        fetch(`https://dummyjson.com/recipes/${recetaId}`)
             .then(function(response) {
                 return response.json();
             })
             .then(function(data) {
+                console.log(data)
                 let detalle = document.getElementById("detalleReceta");
                 detalle.innerHTML = `
                     <article class="article-recetas">
