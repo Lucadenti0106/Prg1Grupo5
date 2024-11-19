@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="body1">
+    <div class="form-general">
+        <h2>Registro</h2>
+        <form id="registroForm" method="get" action="login.html">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class = "form-texto" type="text" id="email" name="email" placeholder="Ingrese su email">
+                <div class="error-message" id="emailError">Por favor complete el campo</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input class = "form-texto"type="password" id="password" name="password" placeholder="Ingrese su contraseña">
+                <div class="error-message" id="passwordError">Por favor complete el campo</div>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="terms"> Acepto los términos y condiciones
+                </label>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Registrarse</button>
+            </div>
+            <div class="form-footer">
+                <a href="login.html">Ya tengo una cuenta</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="registro.js"></script>
+</body>
+</html>

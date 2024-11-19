@@ -26,7 +26,7 @@ if (resultadoBuscador) {
                         <p>${receta[i].difficulty}</p>
                         </article>
                       <article class="detalle-recetas-boton">
-                        <a href="*">Ver mas</a>
+                        <a href="./recetas.html?id=${receta[i].id}">Ver mas</a>
                       </article>
                     </article>
                   `;
