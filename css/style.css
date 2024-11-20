@@ -26,6 +26,7 @@ li{
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    background-image: url(../img/pexels-scottwebb-2824173.jpg);
 }
 .logo-img{
     border-radius: 25%;
@@ -218,12 +219,18 @@ footer {
 }
 
 /* LOGIN/REGISTER */
-
+.body-form{
+    display:flex;
+    width: 100vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
 .form-general {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
 }
@@ -270,12 +277,13 @@ footer {
     border-radius: 4px;
     color: black;
     font-size: 16px;
-    cursor: pointer;
+    cursor: pointer; 
+    border: rgba(0, 0, 0, 0.0) solid 3px;
 }
 
 .form-actions button:hover {
     border:#ff9e53 solid 3px;
-    background-color: greenyellow;
+    background-color: rgb(255, 255, 255);
 }
 
 .form-footer {
