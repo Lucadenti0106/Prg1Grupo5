@@ -196,25 +196,25 @@ footer {
 /* CATEGORIAS */
 
 .categorias-container {
-    width: 100%;
+    justify-content: center;
     display: flex;
-    align-items: center;
-    height: 50px;
-    overflow-x: scroll;
-    white-space: nowrap;
-    position: relative;
-    -ms-overflow-style: none; /* IE y Edge antiguo */
-    scrollbar-width: none; /* Firefox */
+    flex-wrap: wrap;
+    border: #ff6f00 3px solid;
+    gap: 20px;
 }
 .categoria {
-    background-color:#ff9e53;
-    border:solid #000000 2px;
-    color: #000000;
-    padding: 7px 10px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9e53;
+    border-radius: 10px;
+    border:rgb(0, 0, 0) 2px solid;
+    width: 21vw;
+    height: 13vh;
+    font-size: 20px;
+    font-weight: 700;
+    background-image: url();
+    background-size: 100% ;
 }
 
 /* LOGIN/REGISTER */

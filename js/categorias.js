@@ -6,12 +6,12 @@ fetch('https://dummyjson.com/recipes/tags')
     let categorias = data;
     console.log(categorias)
     let tags = "";
-    let listaTags = document.querySelector(".categorias-scroll");
+    let listaTags = document.querySelector(".categorias-container");
 
      
     for (let i = 0; i < categorias.length; i++) {
       tags += `
-                <a href="categorias.html" class="categoria">${categorias[i]}</a>
+                <a href="./category.html?category=${categorias[i]}" class="categoria">${categorias[i]}</a>
              `;
     };
     listaTags.innerHTML = tags
