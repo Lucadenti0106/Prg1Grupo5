@@ -12,13 +12,14 @@ console.log(recetaId)
                 console.log(data)
                 let detalle = document.getElementById("detalleReceta");
                 detalle.innerHTML = `
-                    <article class="article-recetas">
-                        <article class="recetas-info">
-                            <h2><strong>${data.name}</strong></h2>
-                            <img src="${data.image}" alt="${data.name}" style="width: 100%; max-width: 300px;">
-                            <p>Instrucciones de preparación: ${data.instructions}</p>
-                            <p>Tiempo de cocción: ${data.cookTimeMinutes}</p>
-                            <p>Categorías: ${data.tags}</p>
+                    <article class="informacion-receta">                      
+                        <img src="${data.image}" alt="${data.name}" style="width: 100%; max-width: 66vh;">
+                        <article class="recetas-info-data">
+                            <h1><strong>${data.name}</strong></h1>
+                            <h3 style="margin-bottom: 1rem;">${data.difficulty}</h2>
+                            <p style="margin-bottom: 1rem;">${data.instructions}</p>
+                            <p style="margin-bottom: 1rem;">Tiempo de cocción: ${data.cookTimeMinutes} min</p>
+                            <p style="margin-bottom: 1rem;">Categorías: ${data.tags}</p>
                         </article>
                         <ul id="categoriesList"></ul>
                     </article>
@@ -33,6 +34,6 @@ console.log(recetaId)
                 });
             })
             .catch(function(error) {
-                console.log("Error al obtener los detalles de la receta:", error);
+                console.log("Error:", error);
             });
     }

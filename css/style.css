@@ -63,16 +63,8 @@ li{
     border:solid #000000 4px;
     font-weight:520;
 }
-.search-form{
-    display: flex;
-    align-self: center;
-}
-.buscador{
-    border:solid #000000 3px;
-    border-radius: 7px;
-    width: 15vw;
-    height: 40px;
-}
+
+
 li button{
     border-radius: 20px;
     height: 40px;
@@ -101,8 +93,8 @@ li button{
     width: 40vw;
     border:rgb(0, 0, 0) 3px solid;
     background-color:lightgray;
-/*     border: rgb(0, 255, 234) 4px dotted;
- */}
+    /* border: rgb(0, 255, 234) 4px dotted;*/
+}
 .recetas-info{
     display: flex;
     flex-direction: column;
@@ -127,7 +119,8 @@ li button{
     margin: 10px;
     align-self: flex-end;
     justify-self: flex-end;
-}.detalle-recetas-boton:hover{
+}
+.detalle-recetas-boton:hover{
     border:solid #000000 4px;
     font-weight:520;
 }
@@ -135,6 +128,9 @@ li button{
     filter: drop-shadow(3px 3px 6px rgb(88, 88, 88));
     transition-duration: .3s;
 }
+
+/* FOOTER */
+
 footer {
     display: flex;
     justify-content: center;
@@ -147,7 +143,6 @@ footer {
     padding: 5px ;
     border-radius:  20px 20px 0 0;
 }
-
 .social-icons {
     margin-top: 15px;
 }
@@ -162,29 +157,13 @@ footer {
 .social-icons a:hover {
     color: #fff;
 }
-.load-more-button{
-    font-size: 20px;
-    display: flex;
-    border:solid #000000 3px;
-    background-color: rgb(250, 132, 47);
-    border-radius: 7px;
-    height: 50px;
-    width: 10vw;
-    margin: 35px 20px;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-}
-.load-more-button:hover{
-    border: solid 5px black;
-    border-radius: 10px;
-    height: 50px;
-    width: 11vw;
-}
 
 
 /* SEARCH */
-
+.search-form{
+    display: flex;
+    align-self: center;
+}
 .search-results{
     margin-top: 20px;
     display:flex;
@@ -192,6 +171,12 @@ footer {
     justify-content: center;
     gap: 3vh;
     width: 100vw;
+}
+.buscador{
+    border:solid #000000 3px;
+    border-radius: 7px;
+    width: 15vw;
+    height: 40px;
 }
 
 
@@ -201,7 +186,6 @@ footer {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    border: #ff6f00 3px solid;
     gap: 20px;
 }
 .categoria {
@@ -220,6 +204,7 @@ footer {
 }
 
 /* LOGIN/REGISTER */
+
 .body-form{
     display:flex;
     width: 100vw;
@@ -299,4 +284,28 @@ footer {
 
 .form-footer a:hover {
     text-decoration: underline;
+}
+
+/* RECETAS */
+.informacion-receta{
+    width: 80vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border:rgb(0, 0, 0) 3px solid;
+    background-color:rgb(255, 255, 255);
+    /* border: rgb(0, 255, 234) 4px dotted;*/
+    
+}
+.recetas-info-data{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin: 7px;
+    width: 45%;
+    height: 100%;
+    padding: 7px;
+    padding-left: 10px;
+    align-self: flex-start;
 }
