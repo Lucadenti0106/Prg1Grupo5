@@ -6,7 +6,7 @@ let url = `https://dummyjson.com/recipes/search?q=${resultadoBuscador}`;
 let recetaBuscada = document.querySelector(".search-results");
 
 if (resultadoBuscador) {
-    if (resultadoBuscador.length >= 3) { // Verificar que tenga al menos 3 caracteres
+    if (resultadoBuscador.length >= 3) { 
         fetch(url)
             .then(function (response) {
                 return response.json();
