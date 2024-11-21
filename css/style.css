@@ -27,6 +27,7 @@ li{
     align-items: center;
     justify-items: center;
     background-image: url(../img/pexels-scottwebb-2824173.jpg);
+    background-repeat: no-repeat;
 }
 .logo-img{
     border-radius: 25%;
