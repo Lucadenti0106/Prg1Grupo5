@@ -309,3 +309,63 @@ footer {
     padding-left: 10px;
     align-self: flex-start;
 }
+
+@media (max-width: 390px){
+    .indice-vinculos,
+    .indice-general,
+    .logo-img {
+        display: none;
+    }
+    .article-recetas{
+        width: 90vw;
+        flex-direction: column;
+    }
+    .article-recetas img{
+        width: 100%;
+    }
+    .detalle-recetas-boton{
+        height: 90px;
+        width: 92%;
+    }
+    /*RECETA*/
+    .informacion-receta{
+        width: 95vw;
+        flex-direction: column;
+    }
+    .recetas-info-data{
+        width: 90%;
+    }
+
+    /*CATEGORIAS*/
+    
+    .categoria{
+        width: 90vw;
+        height: 8vh;
+    }
+    .categorias-container {
+        gap: 10px;
+    }
+    
+    /*REGISTRO/LOGIN*/
+
+    .body-form{
+        width: 90vw;
+        height: 85vh;
+        border: blue dotted 4px;
+    }
+    
+    .form-general{
+        border: rgb(255, 0, 0) dotted 5px; 
+        width: 90vw;
+    }
+    footer{
+        border: rgb(4, 255, 0) dotted 4px;  
+        width: 90vw;
+    }
+
+    /*SEARCH*/
+
+    .search-results{
+        width: 90vw;
+    }
+}
