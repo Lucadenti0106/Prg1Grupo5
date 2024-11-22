@@ -5,8 +5,11 @@ let resultadoBuscador = queryStringObj.get("buscador");
 let url = `https://dummyjson.com/recipes/search?q=${resultadoBuscador}`;
 let recetaBuscada = document.querySelector(".search-results");
 
+let resultadoEntrada = document.querySelector(".search-results2");
+console.log(resultadoEntrada);
+
 if (resultadoBuscador) {
-    if (resultadoBuscador.length >= 3) { 
+    if (resultadoBuscador.length >= 3) {
         fetch(url)
             .then(function (response) {
                 return response.json();
@@ -18,7 +21,9 @@ if (resultadoBuscador) {
                 let recetasEncontradas = "";
 
                 if (receta && receta.length > 0) {
+                  resultadoEntrada.innerHTML = `<h2> Resultados de búsqueda para: "${resultadoBuscador}" </h2>`; 
                     for (let i = 0; i < receta.length; i++) {
+
                         recetasEncontradas += `
                         <article class="article-recetas">
                           <img src="${receta[i].image}" alt="">

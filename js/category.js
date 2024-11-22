@@ -32,6 +32,7 @@ if (category) {
 
             let recetasContainer = document.querySelector(".recipe-list");
             recetasContainer.innerHTML = recetasHTML;
+            console.log(recetasHTML)
         })
         .catch(function(error) {
             console.log("Error al obtener las recetas de la categoría:", error);
