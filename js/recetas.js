@@ -1,13 +1,13 @@
-let querySelector = location.search; 
+let querySelector = location.search;
 let querySelectorObj = new URLSearchParams(querySelector);
 let recetaId = querySelectorObj.get('id');
 
 if (recetaId) {
     fetch(`https://dummyjson.com/recipes/${recetaId}`)
-        .then(function(response) {
+        .then(function (response) {
             return response.json();
         })
-        .then(function(data) {
+        .then(function (data) {
             let detalle = document.getElementById("detalleReceta");
             detalle.innerHTML = `
                 <article class="informacion-receta">                      
@@ -22,17 +22,18 @@ if (recetaId) {
                     </article>
                 </article>
             `;
+            let categoriesListHtml = "";
+            for (let i = 0; i < data.tags.length; i++) {
+                categoriesListHtml += `
+                    <li>
+                        <a href="category.html?category=${data.tags[i]}" style="text-decoration: none; color: black;">${data.tags[i]}</a>
+                    </li>`;
+            }
 
             let categoriesList = document.getElementById("categoriesList");
-            data.tags.forEach(function(category) {
-                let categoryItem = document.createElement("li");
-                categoryItem.style.marginBottom = "5px";
-                categoryItem.innerHTML = `
-                    <a href="category.html?category=${(category)}" style="text-decoration: none; color: black;">${category}</a>`;
-                categoriesList.appendChild(categoryItem);
-            });
+            categoriesList.innerHTML = categoriesListHtml;
         })
-        .catch(function(error) {
+        .catch(function (error) {
             console.log("Error:", error);
         });
 }

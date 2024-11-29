@@ -3,7 +3,7 @@ let queryParams = new URLSearchParams(queryString);
 let category = queryParams.get("category");
 
 if (category) {
-    fetch(`https://dummyjson.com/recipes/search?q=${(category)}`)
+    fetch(`https://dummyjson.com/recipes/tag/${(category)}`)
         .then(function(response) {
             return response.json();
         })
