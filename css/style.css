@@ -20,6 +20,12 @@ li{
     display: flex;
 }
 
+.button-submit-form{
+    background-color: rgb(250, 132, 47);
+    border: black solid 2px;display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .body1{
     display: flex;

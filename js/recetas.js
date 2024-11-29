@@ -8,7 +8,7 @@ if (recetaId) {
             return response.json();
         })
         .then(function (data) {
-            let detalle = document.getElementById("detalleReceta");
+            let detalle = document.querySelector("#detalleReceta");
             detalle.innerHTML = `
                 <article class="informacion-receta">                      
                     <img src="${data.image}" alt="${data.name}" style="width: 100%; max-width: 66vh;">
@@ -30,7 +30,7 @@ if (recetaId) {
                     </li>`;
             }
 
-            let categoriesList = document.getElementById("categoriesList");
+            let categoriesList = document.querySelector("#categoriesList");
             categoriesList.innerHTML = categoriesListHtml;
         })
         .catch(function (error) {

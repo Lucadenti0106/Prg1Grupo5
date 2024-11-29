@@ -3,16 +3,17 @@ let queryParams = new URLSearchParams(queryString);
 let category = queryParams.get("category");
 
 if (category) {
-    fetch(`https://dummyjson.com/recipes/tag/${(category)}`)
+    fetch(`https://dummyjson.com/recipes/tag/${category}`)
         .then(function(response) {
             return response.json();
         })
         .then(function(data) {
-          let recetas = data.recipes; 
-          let recetasHTML = "";
+            let recetas = data.recipes; 
+            let recetasHTML = "";
 
             if (recetas.length > 0) {
-                recetas.forEach(function(receta) {
+                for (let i = 0; i < recetas.length; i++) {
+                    let receta = recetas[i];
                     recetasHTML += `
                         <article class="article-recetas">
                             <img src="${receta.image}" alt="${receta.name}">
@@ -25,16 +26,16 @@ if (category) {
                             </article>
                         </article>
                     `;
-                });
+                }
             } else {
                 recetasHTML = `<p>No se encontraron recetas para la categoría "${category}".</p>`;
             }
 
             let recetasContainer = document.querySelector(".recipe-list");
             recetasContainer.innerHTML = recetasHTML;
-            console.log(recetasHTML)
+            console.log(recetasHTML);
         })
         .catch(function(error) {
             console.log("Error al obtener las recetas de la categoría:", error);
         });
-} 
+}
